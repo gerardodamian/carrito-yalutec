@@ -49,6 +49,5 @@ export class CarritoListaComponent implements OnInit {
     this.mensajeCompra = 'Gracias por su compra, compra procesada!!';
     this.carritoService.vaciarCarrito();
     this.listCarrito = [];
-
   }
 }

@@ -4,8 +4,6 @@ import { Producto } from '../../../core/modelo/producto';
 import { CarritoService } from '../../../core/services/carrito.service';
 import { ProductoService } from '../../../core/services/producto.service';
 
-
-
 @Component({
   selector: 'app-details-product',
   imports: [],

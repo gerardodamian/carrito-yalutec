@@ -1,4 +1,5 @@
 .product-container {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,7 +17,6 @@
   font-size: 24px;
   color: #333;
   margin-bottom: 20px;
-
 }
 
 .product-container img {
@@ -26,17 +26,21 @@
   margin-bottom: 15px;
 }
 
-.product-container p {
+.product-container p.price {
+  font-size: 35px;
+  color: #e91111;
+  margin: 5px 0;
+}
+
+.product-container p.parr {
   font-size: 16px;
-  color: #666;
+  color: #2e2c2c;
   margin: 5px 0;
 }
 
 .product-container strong {
   color: #222;
 }
-
-
 
 .add-to-cart-btn {
   background-color: #ff5722;
@@ -50,10 +54,10 @@
 }
 
 .add-to-cart-btn:hover {
-  background-color: #e64a19;
+  background-color: #e67c19;
 }
 .add-to-cart-btn {
-  background: linear-gradient(135deg, #ff7e5f, #ff5722); /* Degradado atractivo */
+  background: linear-gradient(135deg, #ff7e5f, #ff5722);
   color: white;
   border: none;
   padding: 12px 20px;
@@ -71,13 +75,13 @@
 
 .add-to-cart-btn:hover {
   background: linear-gradient(135deg, #ff5722, #e64a19);
-  transform: scale(1.05); /* Efecto de agrandamiento */
+  transform: scale(1.05);
 }
 
 .add-to-cart-btn:active {
-  transform: scale(0.95); /* Efecto de clic */
+  transform: scale(0.95);
 }
 
 .add-to-cart-btn i {
-  font-size: 20px; /* Tamaño del ícono */
+  font-size: 20px;
 }

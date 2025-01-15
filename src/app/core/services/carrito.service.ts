@@ -3,7 +3,6 @@ import { Carrito } from '../modelo/carrito';
 import { Producto } from '../modelo/producto';
 import { HttpClient } from '@angular/common/http';
 
-
 @Injectable({
   providedIn: 'root',
 })
@@ -88,7 +87,4 @@ export class CarritoService {
     this.carrito = [];
     this.guardarCarrito();
   }
-
-
 }
-

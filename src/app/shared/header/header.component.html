@@ -8,9 +8,11 @@
   <ul class="nav-links">
     <li><a routerLink="/">Catálogo</a></li>
     <li class="cart">
-      <i class="fas fa-shopping-cart"[matBadge]="carritoService.cantidad()"  routerLink="/carrito"></i>
-
-
+      <i
+        class="fas fa-shopping-cart"
+        [matBadge]="carritoService.cantidad()"
+        routerLink="/carrito"
+      ></i>
     </li>
   </ul>
 </nav>
