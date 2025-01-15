@@ -1,0 +1,115 @@
+.catalogo {
+  padding: 20px;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 25px;
+  row-gap: 50px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.product-image-container {
+  height: 150px;
+  min-height: 150px;
+  width: auto;
+  min-width: 150px;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.product-image {
+  width: 100%;
+  width: 100%;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+
+
+.card-body {
+  /* padding: 10px; */
+  flex: 1;
+}
+
+.card-title {
+  display: -webkit-box;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 4.5em;
+}
+
+.card p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.precio {
+  font-weight: bold;
+  font-size: 25px !important;
+  color: #ff2600 !important;
+}
+
+.boton {
+  color: rgb(255, 255, 255);
+  background-color: #070808;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.desc {
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 4.5em;
+  line-height: 1.5em;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+@media (max-width: 1200px) {
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .cards-container {
+    grid-template-columns: 1fr
+  }
+}

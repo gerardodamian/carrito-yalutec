@@ -1,0 +1,11 @@
+@if (producto) {
+  <div class="product-container">
+    <h2>{{ producto.title }}</h2>
+    <img [src]="producto.image" alt="{{ producto.title }}" width="200" />
+    <p><strong>Precio:</strong> ${{ producto.price }}</p>
+    <p><strong>Descripción:</strong> {{ producto.description }}</p>
+    <button class="add-to-cart-btn" (click)="agregarProducto()">
+  <i class="fa fa-shopping-cart"></i> Agregar al carrito
+</button>
+  </div>
+}

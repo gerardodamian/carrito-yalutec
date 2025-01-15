@@ -1,0 +1,32 @@
+<div class="catalogo">
+  <h1 class="titulo">Catalogo</h1>
+  <hr />
+
+  <div class="cards-container">
+    @for (item of productos; track item.id) {
+    <div class="prod">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">{{ item.title }}</h2>
+
+          <div class="product-image-container" (click)="navigateToDetail(item)">
+
+              <img [src]="item.image" width="120" height="150" />
+
+          </div>
+
+          <p class="desc">{{ item.description }}</p>
+
+          <div class="card-bottom">
+            <small class="precio">{{ item.price | currency : "USD" }}</small>
+
+            <button (click)="agregarProducto(item)" class="boton">
+              <i class="fa fa-shopping-cart"></i> Agregar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>

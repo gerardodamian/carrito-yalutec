@@ -1,0 +1,16 @@
+<nav class="navbar">
+  <div class="logo">
+    <img
+      src="https://w7.pngwing.com/pngs/406/577/png-transparent-grocery-store-convenience-shop-retail-computer-icons-store-food-company-text-thumbnail.png"
+      alt="Logo"
+    />
+  </div>
+  <ul class="nav-links">
+    <li><a routerLink="/">Catálogo</a></li>
+    <li class="cart">
+      <i class="fas fa-shopping-cart"[matBadge]="carritoService.cantidad()"  routerLink="/carrito"></i>
+
+
+    </li>
+  </ul>
+</nav>
