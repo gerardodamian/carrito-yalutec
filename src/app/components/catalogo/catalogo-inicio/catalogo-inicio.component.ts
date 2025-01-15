@@ -43,5 +43,6 @@ export class CatalogoInicioComponent implements OnInit {
 
   navigateToDetail(item: Producto){
     this.router.navigate(["/product", item.id])
+
   }
 }
